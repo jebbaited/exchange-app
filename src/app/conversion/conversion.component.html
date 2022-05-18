@@ -1,0 +1,41 @@
+<div class="Conversion">
+  <div>
+    <p>Exchange conversion</p>
+  </div>
+  <div>
+    <div class="left">
+      <label for="give">You give</label>
+      <div>
+        <app-my-input
+          type="number"
+          id="give"
+          [inputFieldValue]="giveValue"
+          (inputFieldValueChange)="onInputGiveChange($event)"
+        ></app-my-input>
+
+        <app-select
+          [id]="defaultSelectValues.GIVE.id"
+          [defaultValue]="defaultSelectValues.GIVE.currency"
+          (onChanged)="onChangedGiveSelect($event)"
+        ></app-select>
+      </div>
+    </div>
+    <div class="right">
+      <label for="get">You get</label>
+      <div>
+        <app-my-input
+          type="number"
+          id="get"
+          [inputFieldValue]="getValue"
+          (inputFieldValueChange)="onInputGetChange($event)"
+        ></app-my-input>
+
+        <app-select
+          [id]="defaultSelectValues.GET.id"
+          [defaultValue]="defaultSelectValues.GET.currency"
+          (onChanged)="onChangedGetSelect($event)"
+        ></app-select>
+      </div>
+    </div>
+  </div>
+</div>

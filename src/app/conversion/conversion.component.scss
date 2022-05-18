@@ -1,0 +1,48 @@
+$height: 100px;
+$padding: 50px 50px 60px 60px;
+
+.Conversion {
+  height: 100vh;
+  background-color: #E9EEEC;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  p {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 100px;
+  }
+  >div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .left {
+    background-color: white;
+    min-height: $height;
+    padding: $padding;
+    label {
+      display: flex;
+      color: black;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    > div {
+      display: flex;
+    }
+  }
+  .right {
+    background-color: #E9E3D0;
+    min-height: $height;
+    padding: $padding;
+    label {
+      display: flex;
+      color: black;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    > div {
+      display: flex;
+    }
+  }
+}
